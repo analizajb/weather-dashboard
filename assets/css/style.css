@@ -1,0 +1,24 @@
+nav {
+    background-color: blue;
+}
+
+.navbar {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.btn {
+    color: white;
+    background-color: rgba(29, 0, 194, 0.884);
+    border: 1px solid rgb(2, 0, 102);
+    border-radius: 20%;
+}
+.city-name {
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.forecast {
+    font-size: 20px;
+    color: brown;
+}

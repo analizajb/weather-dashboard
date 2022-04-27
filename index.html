@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm justify-content-center text-white">
+        <span class="navbar text-center">Weather Dashboard</span>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4 bg-light">
+                <p class="city-search">Search:</p>
+                <div class="input-city">
+                    <button class="btn btn-primary" type="button" id="search-button">
+                        GO
+                    </button>
+                </div>
+            </div>
+            <!-- History Button -->
+        </div>
+        <div class="col-8">
+            <div class="row mr-0">
+                <div class="col-12 border-dark m-3 rounded">
+                    <div class="row">
+                        <div class="col-12">
+                            <span id="city-name" class="city-name align-middle"></span>
+                            <img id="picture" src="placeholder" alt="">
+                        </div>
+                    </div>
+                    <!-- Weather Conditions -->
+                    <div class="row">
+                        <div class="col-12">
+                            <p id="temp"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p id="humidity"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p id="wind"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p id="UV-index"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Forecast -->
+            <div class="row">
+                <div class="col-12">
+                    <h3>Forecast for the Week</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col forecast bg-light text-white ml-3 md-3"></div>
+                <div class="col forecast bg-light text-white ml-3 md-3"></div>
+                <div class="col forecast bg-light text-white ml-3 md-3"></div>
+                <div class="col forecast bg-light text-white ml-3 md-3"></div>
+                <div class="col forecast bg-light text-white ml-3 md-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link Scripts -->
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
+
+<!-- 
+    ACCEPTANCE CRITERIA 
+GIVEN a weather dashboard with form inputs
+WHEN I search for a city
+THEN I am presented with current and future conditions for that city and that city is added to the search history
+WHEN I view current weather conditions for that city
+THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
+WHEN I view the UV index
+THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
+WHEN I view future weather conditions for that city
+THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+WHEN I click on a city in the search history
+THEN I am again presented with current and future conditions for that city
+-->
