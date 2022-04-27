@@ -1,18 +1,20 @@
 nav {
-    background-color: blue;
+    background-image: linear-gradient(to right, rgba(6, 101, 226, 0.89), rgb(17, 46, 85))
 }
 
 .navbar {
     font-size: 32px;
     font-weight: bold;
 }
-
+.col-12 {
+    border: 1px solid black;
+}
 .btn {
     color: white;
     background-color: rgba(29, 0, 194, 0.884);
     border: 1px solid rgb(2, 0, 102);
-    border-radius: 20%;
 }
+
 .city-name {
     font-size: 28px;
     font-family: 'Courier New', Courier, monospace;
