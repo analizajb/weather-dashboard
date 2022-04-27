@@ -7,7 +7,7 @@ In this page, the user can look up any city to view the current and future weath
 * JavaScript
 
 # Live URL
-...
+https://analizajb.github.io/weather-dashboard/
 
 # Screenshot
 ...
