@@ -4,7 +4,7 @@ var searchHistory = [];
 
 
 function initPage() {
-    const cityEl = document.getElementsByClassName(".input-city");
+    const cityEl = document.getElementsByClassName("#city-name");
     const searchEl = document.getElementsById("#search-button");
     const nameEl = document.getElementsById("#city-name");
     const currentTempEl = document.getElementsById("#temp");
@@ -44,7 +44,13 @@ function initPage() {
             currentUVEl.innerHTML = "UV Index";
             currentUVEl.append(UVIndex);
         });
-   
+        
+        let cityName = response.data.id;
+        let forecastQueryURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityName + "&appid=" + APIKey;
+        axios.get(forecastQueryURL)
+        .then(function(response){
+
+        })
          }) 
     }
 
