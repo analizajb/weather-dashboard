@@ -10,7 +10,8 @@ In this page, the user can look up any city to view the current and future weath
 https://analizajb.github.io/weather-dashboard/
 
 # Screenshot
-...
+![Alt text](./assets/analizajb.github.io_weather-dashboard_.png)
+
 
 # Made by:
 Analiza Boehning
